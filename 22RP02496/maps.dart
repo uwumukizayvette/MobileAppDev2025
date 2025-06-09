@@ -6,6 +6,6 @@ void main(){
 print(studentMarks['Alice']); // Output: 92
 studentMarks['Bob'] = 78; // Add new entry
 studentMarks.remove('John'); // Remove an entry
-print(studentMarks); // {'John': 85, 'Alice': 92, 'Bob': 78}
+print(studentMarks); // {'Alice': 92, 'Bob': 78}
 
 }
