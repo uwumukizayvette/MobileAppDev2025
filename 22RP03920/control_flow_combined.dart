@@ -30,7 +30,7 @@ void main() {
     print('For Loop Count: $i');
   }
 
-  // 4. While Loop
+  // 4. While Loops
   int j = 1;
   while (j <= 3) {
     print('While Loop Count: $j');
