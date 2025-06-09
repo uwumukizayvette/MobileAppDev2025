@@ -16,7 +16,7 @@ void main() {
   // Logical Operators
   bool x = true;
   bool y = false;
-  print('x && y: ${x && y}');
-  print('x || y: ${x || y}');
-  print('!x: ${!x}');
+  print('x && y: ${x && y}');//AND
+  print('x || y: ${x || y}');//OR
+  print('!x: ${!x}');//NOT
 }
