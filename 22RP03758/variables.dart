@@ -19,6 +19,7 @@ underscore (_) and the dollar ($) sign.
 A variable must be declared before it is used.
 */
 
+
 void main(){
   //a variable in dart can be declared without explicitly specifying its type by use "var" keyword
   var name ="smith";

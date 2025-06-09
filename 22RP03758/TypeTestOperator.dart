@@ -6,7 +6,7 @@ void main(){
   var result1 =a is int;
 
   //"is!" 	Checks if a variable is not of a specific type
-  var result2 =a is! int;
+  var result2 =a is! String;
 
   print (result1);
   print(result2);

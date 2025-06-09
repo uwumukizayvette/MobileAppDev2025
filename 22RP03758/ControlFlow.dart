@@ -19,6 +19,17 @@ void main() {
     print('Keep trying!');
   }
 
+  int a = 10;
+  int b = 5;
+  if(a>b){
+    print("a is greates");
+  }
+  else if(b>a){
+    print("b is greater");
+  }else{
+    print("They are equal");
+  }
+
   /*
   2. Loops
   --------
