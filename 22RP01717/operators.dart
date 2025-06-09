@@ -36,12 +36,5 @@ void main() {
   print('isTrue || isFalse → ${isTrue || isFalse}');
   print('!isTrue → ${!isTrue}');
 
-  // Unary Operators
-  int num = 5;
-  print('\nUnary:');
-  print('num = $num');
-  print('++num = ${++num}'); // Pre-increment
-  print('num++ = ${num++}'); // Post-increment
-  print('num after post-increment = $num');
-  print('--num = ${--num}'); // Pre-decrement
+
 }
