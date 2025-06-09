@@ -1,10 +1,17 @@
 void main() {
-  var item = 'Hello';
+  dynamic value = "Hello Dart";
 
-  // ignore: unnecessary_type_check
-  print(item is String); // true
-  print(item is! int);   // true
+  // is operator
+  if (value is String) {
+    print("value is a String");
+  }
 
-  var name = item;
-  print('Length: ${name.length}');
+  // is! operator
+  if (value is! int) {
+    print("value is not an int");
+  }
+
+  // as operator
+  String text = value as String;
+  print("Length of value: ${text.length}");
 }

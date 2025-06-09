@@ -1,10 +1,10 @@
 void main() {
-  // This prints a greeting
-  print('Hello, world');
+  // This is a single-line comment
+  print('This is a Dart program');
 
   /*
-    This is a multi-line comment.
-    It explains more about the code.
+    This is a multi-line comment
+    It explains how comments work in Dart.
   */
-  print('Dart comments example');
+  print('Comments make code easier to read');
 }
