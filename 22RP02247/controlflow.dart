@@ -17,7 +17,7 @@ void main() {
   print("\nWhile Loop:");
   int k = 0;
   while (k < 5) {
-    print("While loop value: $j");
+    print("While loop value: $k");
     k++;
   }
 
@@ -25,7 +25,7 @@ void main() {
   print("\nDo-While Loop:");
   int j = 0;
   do {
-    print("Do-while loop value: $k");
+    print("Do-while loop value: $j");
     j++;
   } while (j < 5);
 
