@@ -40,4 +40,41 @@ if (score >= 90) {
     default:
       print('Invalid grade');
   }
+
+  //4. Nested Switch Statements
+
+  String role = 'student';
+  String level = 'senior';
+
+  switch (role) {
+    case 'student':
+      switch (level) {
+        case 'junior':
+          print('Junior Student');
+          break;
+        case 'senior':
+          print('Senior Student');
+          break;
+      }
+      break;
+    case 'teacher':
+      print('Hello Teacher');
+      break;
+    default:
+      print('Unknown Role');
+  }
+
+//5. Assert Statements
+//	Debug & validate during development
+  // Asserts are used to check conditions that must be true during development.
+  // If the condition is false, an exception is thrown.
+  
+  // Example: Assert that a variable is not null
+  String? name;
+  assert(name != null, 'Name must not be null');
+  
+  // Example: Assert that a number is within a range
+int years = 20;
+  assert(years >= 18, 'years must be 18 or older');
+  print('years is valid');
 }
