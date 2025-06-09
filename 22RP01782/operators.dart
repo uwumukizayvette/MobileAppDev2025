@@ -1,7 +1,8 @@
 
 
 // write dart codes to  use all operators in dartvoid main() {
-  // Arithmetic Operators
+  // 'as' Operator (Typecast)
+  
 void main() {
   int a = 10;
 
@@ -95,6 +96,11 @@ void main() {
   print("Type Test Operators:");
   print("Is value a String? ${value is String}"); // Check type
   print("Is value not an int? ${value is! int}"); // Check type negation
+  dynamic obj = "Dart";
+  String str = obj as String;
+  print("As Operator:");
+  print("obj as String: $str");
+  print("\n");
 
   value = 42; // Change type
   print("Is value an int? ${value is int}"); // Check type again
