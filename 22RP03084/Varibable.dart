@@ -8,7 +8,7 @@ void main() {
   double height = 1.75;     
   String hobby = "coding";
   bool lovesMusic = true;
-
+  
   // cannot change after being set
   final nationality = "Rwandan";
 
