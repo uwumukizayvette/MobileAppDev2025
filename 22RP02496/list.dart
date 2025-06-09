@@ -1,0 +1,8 @@
+//Lists (Arrays)
+//A List is an ordered collection of items.
+void main(){
+List<String> fruits = ['Apple', 'Banana', 'Mango'];
+print(fruits[0]); // Output: Apple
+fruits.add('Orange'); // Add an item
+print(fruits); // Output: [Apple, Banana, Mango, Orange]
+}
