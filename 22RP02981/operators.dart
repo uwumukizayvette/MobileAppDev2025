@@ -21,5 +21,10 @@ void main() {
   bool isAdmin = false;
   print('Can Access: ${isLoggedIn && isAdmin}'); // false
 
+    // 5. Assignment Operator
+  int total = 5;
+  total += 10; // total = total + 10
+  print('Updated Total: $total');
+
 
 }
