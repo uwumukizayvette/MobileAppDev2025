@@ -1,12 +1,9 @@
 void main(){
-    int a = 5;
-    int b = 10;
-    String result;
-    if(a > b){
-        result = 'a is greater';
-    }
-    else{
-        result = 'b is greater';
-    }
-    print (result);
+  int a =5,b=10;
+  if(a>b){
+    print("a is greater");
+  }
+  else{
+    print("B is greater");
+  }
 }
