@@ -27,11 +27,11 @@ void main() {
   "dowhile Loop" The dowhile loop is similar to the while loop except that the do...while loop doesnt evaluate the 
   condition for the first time the loop executes.
   */
-for (int i = 0; i < 5; i++) {
+for (int i = 0; i <= 5; i++) {
   print('i = $i');
 }
   int count = 0;
-while (count < 3) {
+while (count <= 3) {
   print('count = $count');
   count++;
 }
