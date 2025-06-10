@@ -299,18 +299,18 @@ void main() {
 
 ### 1.12 Generators
 
-Functions that produce a sequence of values lazily using `sync` and `yield`.
+Functions that produce a sequence of values lazily using `sync`* and `yield`.
 
 **Syntax:**
 
 ```dart
-Iterable<Type> functionName() sync {
+Iterable<Type> functionName() sync* {
   yield value;
 }
 ```
 
 ```dart
-Iterable<int> generateNumbers() sync {
+Iterable<int> generateNumbers() sync* {
   for (int i = 1; i <= 5; i++) {
     yield i;
   }
