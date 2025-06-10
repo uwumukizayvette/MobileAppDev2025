@@ -15,7 +15,7 @@ void main() {
   print('Updated Nickname: $nickname');
 
   // Null-aware operator
-  print('Nickname or Unknown: ${nickname ?? "Unknown"}');
+  print("Nickname or Unknown: ${nickname ?? "Unknown"}");
 
   // 🔹 Late Variables
 
@@ -24,8 +24,9 @@ void main() {
   message = 'Hello, initialized later!';
   print('Message: $message');
 
-  // Late with a function
-  late int computedValue = calculateSum(5, 10);
+  // Corrected late initialization
+  late int computedValue;
+  computedValue = calculateSum(5, 10);
   print('Computed Value: $computedValue');
 }
 
