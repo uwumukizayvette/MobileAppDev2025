@@ -1,9 +1,9 @@
 // Q1: Regular Function
-/*Definition: A reusable block of code that performs a specific task.
+/*Definition: A reusable block of code that performs a specific task
 
 Syntax:
 
-void greet() {
+void greet() { 
   print('Hello!');
 }*/
 void greetUser() {
