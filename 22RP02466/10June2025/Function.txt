@@ -42,3 +42,4 @@ SYNTAX:
 returnType functionName([paramType param1, paramType param2]) {
   // function body
 }
+
