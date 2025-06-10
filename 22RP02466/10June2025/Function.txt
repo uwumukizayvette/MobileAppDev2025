@@ -35,3 +35,10 @@ returnType functionName(parameters) => expression;
 USAGE:
 To write clean, concise functions.
 Often used for simple calculations
+
+FUNCTION WITH OPTIONAL PARAMETER:
+Optional parameters allow you to define functions that don’t require all arguments to be passed every time.
+SYNTAX:
+returnType functionName([paramType param1, paramType param2]) {
+  // function body
+}
