@@ -8,13 +8,13 @@ void listsExample() {
   // Creating lists
   List<String> names = ['John', 'Jane', 'Bob'];
   // List<int> numbers = [1, 2, 3, 4, 5]; // Unused list
-  
+
   // Adding elements
   names.add('Alice');
-  
+
   // Accessing elements
   print('First name: ${names[0]}');
-  
+
   // Iterating through list
   print('\nList Iteration:');
   for (String name in names) {
@@ -25,19 +25,15 @@ void listsExample() {
 // 2. Maps (Dictionaries)
 void mapsExample() {
   // Creating map
-  Map<String, int> ages = {
-    'John': 30,
-    'Jane': 25,
-    'Bob': 35
-  };
-  
+  Map<String, int> ages = {'John': 30, 'Jane': 25, 'Bob': 35};
+
   // Adding new entry
   ages['Alice'] = 28;
-  
+
   // Accessing value
   print('\nMap Example:');
   print('John\'s age: ${ages['John']}');
-  
+
   // Iterating through map
   print('\nMap Iteration:');
   ages.forEach((key, value) => print('$key is $value years old'));
@@ -47,13 +43,13 @@ void mapsExample() {
 void setsExample() {
   // Creating set
   Set<String> colors = {'red', 'green', 'blue'};
-  
+
   // Adding element
   colors.add('yellow');
-  
+
   // Sets automatically remove duplicates
   colors.add('red');
-  
+
   print('\nSet Example:');
   print('Colors set: $colors');
 }
@@ -64,9 +60,9 @@ enum Color { red, green, blue }
 void enumsExample() {
   // Using enum
   Color myColor = Color.red;
-  
+
   print('\nEnum Example:');
-  switch(myColor) {
+  switch (myColor) {
     case Color.red:
       print('The color is red');
       break;
@@ -84,7 +80,7 @@ void constantsExample() {
   // Declaring constants
   const String greeting = 'Hello';
   const List<String> weekdays = ['Mon', 'Tue', 'Wed'];
-  
+
   print('\nConstants Example:');
   print('Greeting: $greeting');
   print('Weekdays: $weekdays');
@@ -94,14 +90,14 @@ void constantsExample() {
 void variableTypesExample() {
   // final - value cannot be changed after initialization
   final String name = 'John';
-  
+
   // dynamic - can hold any type of value
   dynamic value = 42;
   value = 'Hello';
-  
+
   // var - type is inferred from the initial value
   var number = 10;
-  
+
   print('\nVariable Types Example:');
   print('Final name: $name');
   print('Dynamic value: $value');
@@ -115,10 +111,10 @@ void nullSafetyExample() {
   // Non-nullable type
   // Non-nullable type
   String name = 'John';
-  
+
   // Nullable type
   String? optionalName = null; // Initialize with null
-  
+
   // Null check
   if (optionalName != null) {
     print('\nNull Safety Example:');
@@ -131,7 +127,7 @@ void nullSafetyExample() {
 // 8. Late Variables
 void lateExample() {
   late String name;
-  
+
   // Name is initialized when first accessed
   print('\nLate Variable Example:');
   name = 'John';
@@ -143,7 +139,7 @@ void lateExample() {
 // 9. If-Else Statements
 void ifElseExample() {
   int age = 20;
-  
+
   print('\nIf-Else Example:');
   if (age >= 18) {
     print('You are an adult');
@@ -156,7 +152,7 @@ void ifElseExample() {
 void ternaryExample() {
   int age = 25;
   String message = age >= 18 ? 'Adult' : 'Minor';
-  
+
   print('\nTernary Example:');
   print('Message: $message');
 }
@@ -164,9 +160,9 @@ void ternaryExample() {
 // 11. Switch Statements
 void switchExample() {
   int day = 3;
-  
+
   print('\nSwitch Example:');
-  switch(day) {
+  switch (day) {
     case 1:
       print('Monday');
       break;
@@ -185,11 +181,11 @@ void switchExample() {
 void nestedSwitchExample() {
   int month = 1;
   int day = 15;
-  
+
   print('\nNested Switch Example:');
-  switch(month) {
+  switch (month) {
     case 1:
-      switch(day) {
+      switch (day) {
         case 1:
           print('New Year\'s Day');
           break;
@@ -205,7 +201,7 @@ void nestedSwitchExample() {
 // 13. Assert Statements
 void assertExample() {
   int age = 20;
-  
+
   print('\nAssert Example:');
   assert(age >= 0, 'Age must be positive');
   print('Age is valid');
@@ -224,7 +220,7 @@ void forLoopExample() {
 // 15. For-in Loop
 void forInExample() {
   List<String> names = ['John', 'Jane', 'Bob'];
-  
+
   print('\nFor-in Example:');
   for (String name in names) {
     print(name);
@@ -234,7 +230,7 @@ void forInExample() {
 // 16. While Loop
 void whileExample() {
   int count = 0;
-  
+
   print('\nWhile Example:');
   while (count < 5) {
     print('Count: $count');
