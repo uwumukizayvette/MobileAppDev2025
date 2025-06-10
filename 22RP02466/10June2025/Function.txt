@@ -10,3 +10,18 @@ Usage:
 To organize and reuse code.
 To separate logic into meaningful units.
 To perform tasks with given inputs and optionally provide outputs.
+
+FUNCTION WITH PARAMETER IN DART
+
+A function with parameters is a function that accepts inputs (called parameters or arguments) when it is called. 
+These parameters allow you to pass data into the function so it can process or use the data inside its body.
+
+SYNTAX:
+returnType functionName(parameterType parameterName, ...) {
+  // function body
+}
+USAGE:
+To write flexible and reusable functions.
+To process different input values without rewriting the function.
+To perform operations based on the input data.
+
