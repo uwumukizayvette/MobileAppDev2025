@@ -128,4 +128,5 @@ void main() {
   print(counter());  // Output: 1
   print(counter());  // Output: 2
   print(counter());  // Output: 3
+  
 }
