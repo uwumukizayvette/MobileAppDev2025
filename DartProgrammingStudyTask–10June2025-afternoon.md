@@ -1,6 +1,6 @@
 # Dart OOP
 
-## Phase 1: Dart OOP Foundations
+## Dart OOP Foundations
 
 ### 1. Introduction to OOP in Dart
 **What to learn**: Understand the four pillars of OOP: **encapsulation**, **inheritance**, **abstraction**, and **polymorphism** and how Dart supports them.
