@@ -16,7 +16,6 @@ void main() {
   // Logical Operators
   bool x = true, y = false;
   print(x && y); // false
-  print(x || y); // true
   print(!x);     // false
 
   // Assignment Operators
