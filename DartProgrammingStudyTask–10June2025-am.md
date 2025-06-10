@@ -8,10 +8,12 @@ Please take time today to **search, read, and understand** the following key con
 ## FUNCTIONS
 - ### Regular Functions
 - ### Functions with Parameters
+- ### Function parameters (positional, named)
 - ### Arrow Functions
 - ### Functions with Optional Parameters
 - ### Types of Functions
 - ### Named Parameters
+- ### Anonymous functions (closures, lambdas)
 - ### Return Values
 - ### Implicit Return Type
 - ###  No Return Value (Void)
