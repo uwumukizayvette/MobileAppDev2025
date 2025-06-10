@@ -1,107 +1,138 @@
-// Iyi function ni isanzwe (Regular Function)
+// All Dart function types and examples 
+
+// 1. Regular Function
 void greet() {
-  print("Muraho neza!");
+  // Just prints a basic message
+  print("Hello from a regular function!");
 }
 
-// Function ifite parameter imwe (izina)
+// 2. Function with Parameters
 void greetUser(String name) {
-  print("Muraho $name!");
+  // Prints greeting using the passed parameter
+  print("Hello, $name!");
 }
 
-// Arrow function: ifata umubare igasubiza ikubye
-int square(int x) => x * x;
+// 3. Arrow Function (Short syntax)
+String greetArrow(String name) => "Hi, $name!";
 
-// Optional parameter: imyaka ni optional (ntigomba guhora ihari)
-void showInfo(String name, [int? age]) {
-  print("Izina: $name");
-  if (age != null) {
-    print("Imyaka: $age");
+// 4. Function with Optional Parameters
+void showMessage(String message, [String? sender]) {
+  // Optional second parameter
+  if (sender != null) {
+    print("$message from $sender");
+  } else {
+    print(message);
   }
 }
 
-// Function ifite parameters zanditswe mu mazina (named parameters)
-void displayUser({required String name, int age = 18}) {
-  print("Izina: $name, Imyaka: $age");
+// 5. Function with Explicit Type
+int add(int a, int b) {
+  // Adds two integers
+  return a + b;
 }
 
-// Function isubiza igisubizo (String)
-String getWelcomeMessage(String name) {
-  return "Murakaza neza $name!";
+// 6. Function with Named Parameters
+void registerUser({required String name, int age = 18}) {
+  // Named parameters with default age
+  print("User: $name, Age: $age");
 }
 
-// Implicit return type (Dart imenya ubwoko bw’igisubizo)
-getCity() => "Kigali";
-
-// Function nta gisubizo isubiza (Void)
-void sayThanks() {
-  print("Murakoze cyane!");
+// 7. Function with Return Value
+double getCircleArea(double radius) {
+  // Returns area using formula πr²
+  return 3.14159 * radius * radius;
 }
 
-// Higher-order function: yakira indi function
-void processNum(int number, Function func) {
-  print("Result: ${func(number)}");
+// 8. Function with Implicit Return Type
+sayThanks() {
+  // Dart guesses the return type
+  return "Thank you!";
 }
 
-// Lexical Closure: ikora function izibukira agaciro ka multiplier
-Function multiplier(int factor) {
-  return (int value) => factor * value;
+// 9. Function with No Return Value (void)
+void logOut() {
+  // Void means no return, just performs an action
+  print("User logged out.");
 }
 
-// Generator function: isubiza urutonde (Iterable) gahoro gahoro
-Iterable<int> countTo(int max) sync* {
-  for (int i = 1; i <= max; i++) {
-    yield i;
-  }
+// 10. Higher-Order Function (takes another function as argument)
+void applyFunction(int x, int y, int Function(int, int) operation) {
+  // Executes the operation function on x and y
+  print("Result: ${operation(x, y)}");
 }
 
-// Main function yerekana uko functions zikora
+// 11. Lexical Closure
+Function makeMultiplier(int factor) {
+  // Returns a function that uses 'factor' from outer scope
+  return (int value) => value * factor;
+}
+
+void testClosure() {
+  var triple = makeMultiplier(3); // Creates a multiplier function
+  print(triple(4)); // Outputs 12
+}
+
+// 12. Generator Function (sync*)
+Iterable<int> countToThree() sync* {
+  // Yields numbers 1, 2, 3
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+// 13. Async Generator Function (async*)
+Stream<String> fetchNames() async* {
+  // Yields names one after another asynchronously
+  yield "Sandrine";
+  await Future.delayed(Duration(seconds: 1));
+  yield "UWABAZIMANA";
+}
+
 void main() {
-  // Question 1: Regular Function
-  print("This is the output of Question 1:");
+  // Test all the functions here
+  
+  // Regular
   greet();
 
-  // Question 2: Function with Parameters
-  print("\nThis is the output of Question 2:");
-  greetUser("Sandrine");
+  // With parameter
+  greetUser("Rosette");
 
-  // Question 3: Arrow Function (short function syntax)
-  print("\nThis is the output of Question 3:");
-  print("Square of 4 is: ${square(4)}");
+  // Arrow
+  print(greetArrow("ISHIMWE"));
 
-  // Question 4: Function with Optional Parameters
-  print("\nThis is the output of Question 4:");
-  showInfo("Alice");
-  showInfo("Alice", 22);
+  // Optional
+  showMessage("Hello world");
+  showMessage("Hello again", "Admin");
 
-  // Question 5: Named Parameters
-  print("\nThis is the output of Question 5:");
-  displayUser(name: "John");
-  displayUser(name: "John", age: 25);
+  // Typed return
+  print("Sum: ${add(5, 7)}");
 
-  // Question 6: Return Values
-  print("\nThis is the output of Question 6:");
-  print(getWelcomeMessage("UWABAZIMANA"));
+  // Named params
+  registerUser(name: "Ishimwe", age: 22);
 
-  // Question 7: Implicit Return Type
-  print("\nThis is the output of Question 7:");
-  print("City: ${getCity()}");
+  // Return value
+  print("Area of circle: ${getCircleArea(5)}");
 
-  // Question 8: No Return Value (Void)
-  print("\nThis is the output of Question 8:");
-  sayThanks();
+  // Implicit return
+  print(sayThanks());
 
-  // Question 9: Higher-Order Functions
-  print("\nThis is the output of Question 9:");
-  processNum(5, square);
+  // Void
+  logOut();
 
-  // Question 10: Lexical Closures
-  print("\nThis is the output of Question 10:");
-  var timesThree = multiplier(3);
-  print("3 x 4 = ${timesThree(4)}");
+  // Higher-order function
+  applyFunction(10, 5, (a, b) => a - b); // Subtraction passed as inline function
 
-  // Question 11: Generators
-  print("\nThis is the output of Question 11:");
-  for (int number in countTo(5)) {
-    print("Counting: $number");
+  // Closure
+  testClosure();
+
+  // Generators
+  print("Counting to 3:");
+  for (var number in countToThree()) {
+    print(number);
   }
+
+  // Async generator (needs await and async)
+  fetchNames().listen((name) {
+    print("Name: $name");
+  });
 }
