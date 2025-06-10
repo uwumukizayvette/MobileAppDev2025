@@ -1,4 +1,4 @@
-enum Day { Monday, Tuesday, Wednesday, Thursday, Friday }
+enum Day { Monday, Tuesday, Wednesday, Thursday, Friday,Saturday}
 
 void main() {
 
