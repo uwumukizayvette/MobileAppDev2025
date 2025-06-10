@@ -25,3 +25,13 @@ To write flexible and reusable functions.
 To process different input values without rewriting the function.
 To perform operations based on the input data.
 
+ARROW FUNCTION:
+
+An arrow function (also called expression-bodied function) is a shorthand syntax for functions that contain only a single expression. 
+It automatically returns the value of that expression without needing an explicit return keyword or curly braces.
+
+SYNTAX:
+returnType functionName(parameters) => expression;
+USAGE:
+To write clean, concise functions.
+Often used for simple calculations
