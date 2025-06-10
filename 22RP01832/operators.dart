@@ -15,33 +15,33 @@ void main() {
   int c = 5;
   print('\nAssignment Operators:');
   print('Initial c = $c');
-  c += 3; // c = c + 3
+  c += 3;
   print('After c += 3: $c');
-  c -= 2; // c = c - 2
+  c -= 2;
   print('After c -= 2: $c');
-  c *= 4; // c = c * 4
+  c *= 4;
   print('After c *= 4: $c');
-  c ~/= 3; // c = c ~/ 3 (integer division)
+  c ~/= 3;
   print('After c ~/= 3: $c');
-  c %= 3; // c = c % 3
+  c %= 3;
   print('After c %= 3: $c');
 
   // Comparison Operators
   print('\nComparison Operators:');
-  print('a == b? ${a == b}');  // false
-  print('a != b? ${a != b}');  // true
-  print('a > b? ${a > b}');    // true
-  print('a < b? ${a < b}');    // false
-  print('a >= b? ${a >= b}');  // true
-  print('a <= b? ${a <= b}');  // false
+  print('a == b? ${a == b}');
+  print('a != b? ${a != b}');
+  print('a > b? ${a > b}');
+  print('a < b? ${a < b}');
+  print('a >= b? ${a >= b}');
+  print('a <= b? ${a <= b}');
 
   // Logical Operators
   bool x = true;
   bool y = false;
   print('\nLogical Operators:');
-  print('x && y = ${x && y}'); // false
-  print('x || y = ${x || y}'); // true
-  print('!x = ${!x}');         // false
+  print('x && y = ${x && y}');
+  print('x || y = ${x || y}');
+  print('!x = ${!x}');
 
   // Type Test Operators
   dynamic val = "Dart";
@@ -59,12 +59,12 @@ void main() {
   int p = 5;  // binary 0101
   int q = 3;  // binary 0011
   print('\nBitwise Operators:');
-  print('p & q = ${p & q}');   // 1 (0001)
-  print('p | q = ${p | q}');   // 7 (0111)
-  print('p ^ q = ${p ^ q}');   // 6 (0110)
-  print('~p = ${~p}');         // bitwise NOT
-  print('p << 1 = ${p << 1}'); // left shift: 10 (1010)
-  print('p >> 1 = ${p >> 1}'); // right shift: 2 (0010)
+  print('p & q = ${p & q}');
+  print('p | q = ${p | q}');
+  print('p ^ q = ${p ^ q}');
+  print('~p = ${~p}');
+  print('p << 1 = ${p << 1}');
+  print('p >> 1 = ${p >> 1}');
 
   // Conditional (Ternary) Operator
   int age = 20;
@@ -75,16 +75,14 @@ void main() {
   // Null-aware Operators
   String? name;
   print('\nNull-aware Operators:');
-  print('Name: ${name ?? 'Guest'}'); // prints Guest because name is null
+  print('Name: ${name ?? 'Guest'}');
 
-  name ??= 'Alice';  // assign only if null
+  name ??= 'Alice';
   print('Name after ??= operator: $name');
 
-  // Accessing property safely with ?.
   int? length = name?.length;
   print('Length of name: $length');
 
-  // Null assertion operator (dangerous if null!)
-  // print(name!.toUpperCase()); // Uncomment if sure name is NOT null
-
+  // Uncomment if you're sure 'name' is not null
+  // print(name!.toUpperCase());
 }
