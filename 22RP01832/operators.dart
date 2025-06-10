@@ -1,5 +1,5 @@
 void main() {
-  // Arithmetic Operators
+  // Arithmetic Operator
   int a = 10;
   int b = 3;
 

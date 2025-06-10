@@ -3,7 +3,7 @@ void main() {
 
   /*
     This is a multi-line comment.
-    It can span several lines.
+    It can span several lines
   */
 
   /// This is a documentation comment for the following variable.
