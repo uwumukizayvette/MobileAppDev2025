@@ -28,4 +28,16 @@ class Dog extends Animal {
   void bark() {
     print('Woof! 🐶');
   }
+}//
+void main(){
+  int a = 5 ,b= 10;
+  if (a>b){
+    print('a is greater than b');
+  } else if (a < b) {
+    print('a is less than b');
+  } else {
+    print('a is equal to b');
+  }
+  String result = (a > b) ? 'a is greater' : (a < b) ? 'a is less' : 'a is equal';
+  print(result);
 }
