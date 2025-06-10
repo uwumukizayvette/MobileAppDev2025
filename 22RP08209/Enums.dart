@@ -3,4 +3,6 @@ void main() {
   List<Day> allDays = Day.values;
  
  print(allDays);
+ 
+
 }
