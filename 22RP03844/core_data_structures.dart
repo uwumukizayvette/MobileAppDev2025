@@ -37,6 +37,8 @@ enum Color { red, green, blue }
 void enumsExample() {
   Color favorite = Color.blue;
   print('Favorite color: $favorite'); // Color.blue
+
+  //enum to create  days of the week with missing one day
 }
 
 // 5. Constants
