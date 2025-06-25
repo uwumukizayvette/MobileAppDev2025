@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "343028789071",
+    "project_id": "todolist-e2229",
+    "storage_bucket": "todolist-e2229.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343028789071:android:9c96cbe764788fa7161f3a",
+        "android_client_info": {
+          "package_name": "com.example.taskmanager2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFVU7Aspp6VZOTx4r_09S8LA29XbYGsHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343028789071:android:9afa9f5ba505b897161f3a",
+        "android_client_info": {
+          "package_name": "com.jados.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFVU7Aspp6VZOTx4r_09S8LA29XbYGsHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
