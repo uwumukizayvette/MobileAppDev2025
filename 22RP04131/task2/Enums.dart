@@ -1,7 +1,5 @@
-void greetUser() {
-  print("hello welcome to dart programming");
+void main() {
+  print(square(4));
 }
 
-void main() {
-  greetUser();
-}
+int square(int x) {}
