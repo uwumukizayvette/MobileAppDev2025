@@ -1,6 +1,6 @@
 void main() {
   // Dynamic variable that holds a String value
-  dynamic data = 'Hello, Dart!';
+  String data = 'Hello, Dart!';
 
   // === Using 'is' to check type ===
   if (data is String) {
