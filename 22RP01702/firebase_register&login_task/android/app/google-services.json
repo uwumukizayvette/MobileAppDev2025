@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "829189942319",
+    "firebase_url": "https://first-crude-project-default-rtdb.firebaseio.com",
+    "project_id": "first-crude-project",
+    "storage_bucket": "first-crude-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829189942319:android:308734cd4edec6430b6ada",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjGm4yfiuHU2Il7pvJBJZVVXoE5tNZN5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
